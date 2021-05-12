@@ -48,11 +48,12 @@ def DDsort(lt, rt):
       tmp = tmp + arr[p2:rt+1]
     for i in range(len(tmp)):
       arr[lt+i] = tmp[i]
+    print('>>>arr:', arr)
 
 
 if __name__ == "__main__":
-  arr=[random.randint(1,1000) for _ in range(8)]
-  # arr=[23,11,45,36,15,67,33,21]
+  # arr=[random.randint(1,1000) for _ in range(8)]
+  arr=[23,11,45,36,15,67,33,21]
   print('Before sort : ', end=' ')
   print(arr)
 
